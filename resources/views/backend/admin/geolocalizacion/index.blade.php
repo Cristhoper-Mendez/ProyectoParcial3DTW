@@ -17,11 +17,15 @@
 </style>
 
 <div class="container mt-4">
-    <h4>Ubicacion actual del usuario</h4>
-    <p><strong>Latitud:</strong> <span id="lat"></span></p>
-    <p><strong>Longitud:</strong> <span id="lng"></span></p>
-    <button class="btn btn-primary mb-2" onclick="getLocation()">Actualizar Ubicacion</button>
-    <div id="map"></div>
+    <h4 class="text-center mb-4">Ubicacion actual del usuario</h4>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <p><strong>Latitud:</strong> <span id="lat"></span>, <strong>Longitud:</strong> <span id="lng"></span></p>
+            <button class="btn btn-primary mb-3" onclick="getLocation()">Actualizar Ubicacion</button>
+            <div id="map" style="border: solid 1px #aaaaaa"></div>
+        </div>
+    </div>
 </div>
 
 @extends('backend.menus.footerjs')
