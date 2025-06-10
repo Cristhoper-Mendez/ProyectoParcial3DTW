@@ -22,7 +22,7 @@
 </style>
 
 <div class="container mt-4">
-    <h4>Ubicación actual del usuario</h4>
+    <h4>Ubicacion actual del usuario</h4>
     <p><strong>Latitud:</strong> <span id="lat"></span></p>
     <p><strong>Longitud:</strong> <span id="lng"></span></p>
     <div id="map"></div>
@@ -30,17 +30,11 @@
 
 @extends('backend.menus.footerjs')
 @section('archivos-js')
-
-    <script src="{{ asset('js/jquery.dataTables.js') }}" type="text/javascript"></script>
-    <script src="{{ asset('js/dataTables.bootstrap4.js') }}" type="text/javascript"></script>
-
     <script src="{{ asset('js/toastr.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/axios.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('js/sweetalert2.all.min.js') }}"></script>
     <script src="{{ asset('js/alertaPersonalizada.js') }}"></script>
 
-
-    <!-- incluir tabla -->
     <script type="text/javascript"></script>
 
     <script></script>
