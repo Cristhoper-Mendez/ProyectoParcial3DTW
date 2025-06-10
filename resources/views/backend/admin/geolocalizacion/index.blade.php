@@ -10,11 +10,6 @@
 @stop
 
 <style>
-    table {
-        /*Ajustar tablas*/
-        table-layout: fixed;
-    }
-
     #map {
         height: 400px;
         width: 100%;
