@@ -9,6 +9,7 @@ use App\Http\Controllers\Backend\Perfil\PerfilController;
 use App\Http\Controllers\Backend\Geolocalizacion\GeolocalizacionController;
 use App\Http\Controllers\Backend\Configuracion\ConfiguracionController;
 use App\Http\Controllers\Backend\Registro\RegistroController;
+use App\Http\Controllers\Backend\Video\VideoController;
 
 
 
@@ -62,3 +63,8 @@ Route::get('/admin/dashboard', [DashboardController::class,'vistaDashboard'])->n
 
 // --- Geolocalizacion ---
 Route::get('/admin/gelocalizacion', [GeolocalizacionController::class,'index'])->name('admin.geolocalizacion.index');
+
+
+
+// --- Video ---
+Route::get('/admin/video', [VideoController::class,'index'])->name('admin.video.index');
