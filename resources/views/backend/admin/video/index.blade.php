@@ -11,12 +11,12 @@
             Cámara en Vivo
         </div>
         <div class="card-body">
-            <div class="row justify-content-center">
+            <div id="cameraRow" class="row justify-content-center">
                 <div class="col-md-6 text-center mb-3">
                     <video id="video" width="100%" height="auto" autoplay class="border rounded"></video>
                 </div>
 
-                <div class="col-md-6 text-center mb-3">
+                <div id="captureCol" class="col-md-6 text-center mb-3 d-none">
                     <img id="capturedImage" class="rounded border img-fluid" style="display:none; max-width: 100%; height: auto;" />
                 </div>
             </div>
@@ -70,6 +70,11 @@
 
                         capturedImage.src = imageDataURL;
                         capturedImage.style.display = 'block';
+
+                        document.getElementById('captureCol').classList.remove('d-none');
+
+                        document.getElementById('cameraRow').classList.remove('justify-content-center');
+                        document.getElementById('cameraRow').classList.add('justify-content-between');
 
                         downloadBtn.href = imageDataURL;
                         downloadBtn.style.display = 'inline-block';
