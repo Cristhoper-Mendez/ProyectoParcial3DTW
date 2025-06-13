@@ -68,3 +68,8 @@ Route::get('/admin/gelocalizacion', [GeolocalizacionController::class,'index'])-
 
 // --- Video ---
 Route::get('/admin/video', [VideoController::class,'index'])->name('admin.video.index');
+
+// --- web workers ---
+Route::get('/workers', function (){
+    return view('workers');
+});
