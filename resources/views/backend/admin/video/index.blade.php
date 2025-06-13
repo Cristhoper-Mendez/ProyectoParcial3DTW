@@ -6,17 +6,27 @@
 @stop
 
 <div class="container mt-4">
-    <h4 class="text-center mb-4">Captura desde la cámara web</h4>
+    <div class="card mb-5">
+        <div class="card-header">
+            Cámara en Vivo
+        </div>
+        <div class="card-body">
+            <div class="row justify-content-center">
+                <div class="col-md-6 text-center mb-3">
+                    <video id="video" width="100%" height="auto" autoplay class="border rounded"></video>
+                </div>
 
-    <div class="card shadow-sm mb-5">
-        <div class="card-body text-center">
-            <video id="video" width="640" height="480" autoplay class="border mb-3 rounded"></video>
-            <br>
-            <button id="captureBtn" class="btn btn-primary">Tomar Foto</button>
-            <a id="downloadBtn" class="btn btn-success ms-2" style="display:none;" download="captura.png">Descargar Foto</a>
+                <div class="col-md-6 text-center mb-3">
+                    <img id="capturedImage" class="rounded border img-fluid" style="display:none; max-width: 100%; height: auto;" />
+                </div>
+            </div>
 
-            <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
-            <img id="capturedImage" class="mt-3 rounded" style="display:none; border: 1px solid #ccc;" />
+            <div class="text-center mt-3">
+                <button id="captureBtn" class="btn btn-primary">Tomar Foto</button>
+                <a id="downloadBtn" class="btn btn-success ms-2" style="display:none;" download="captura.png">Descargar Foto</a>
+            </div>
+
+            <canvas id="canvas" width="320" height="240" style="display:none;"></canvas>
         </div>
     </div>
 </div>

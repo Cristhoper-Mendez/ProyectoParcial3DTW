@@ -42,7 +42,7 @@
 
                     <li class="nav-item">
                         <a href="#" class="nav-link nav-">
-                            <i class="far fa-edit"></i>
+                            <i class="bi bi-card-checklist mr-1" style="font-size: 1.3rem;"></i>
                             <p>
                                 Uso de APIs
                                 <i class="fas fa-angle-left right"></i>
@@ -52,7 +52,7 @@
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="{{ route('admin.geolocalizacion.index') }}" target="frameprincipal" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="bi bi-geo-alt mr-2"></i>
                                     <p>Geolocalizacion</p>
                                 </a>
                             </li>
@@ -61,7 +61,7 @@
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="{{ route('admin.video.index') }}" target="frameprincipal" class="nav-link">
-                                    <i class="far fa-circle nav-icon"></i>
+                                    <i class="bi bi-person-video mr-2"></i>
                                     <p>Video</p>
                                 </a>
                             </li>
