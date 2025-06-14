@@ -66,6 +66,16 @@
                             </li>
                         </ul>
 
+                        
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('admin.canva.index') }}" target="frameprincipal" class="nav-link">
+                                    <i class="bi bi-geo-alt mr-2"></i>
+                                    <p>Canvas</p>
+                                </a>
+                            </li>
+                        </ul>
+
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
                                 <a href="{{ route('admin.video.index') }}" target="frameprincipal" class="nav-link">
