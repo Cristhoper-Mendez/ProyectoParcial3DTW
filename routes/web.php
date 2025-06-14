@@ -10,6 +10,7 @@ use App\Http\Controllers\Backend\Geolocalizacion\GeolocalizacionController;
 use App\Http\Controllers\Backend\Configuracion\ConfiguracionController;
 use App\Http\Controllers\Backend\Registro\RegistroController;
 use App\Http\Controllers\Backend\Video\VideoController;
+use App\Http\Controllers\Backend\Canva\CanvaController;
 
 
 
@@ -64,6 +65,8 @@ Route::get('/admin/dashboard', [DashboardController::class,'vistaDashboard'])->n
 // --- Geolocalizacion ---
 Route::get('/admin/gelocalizacion', [GeolocalizacionController::class,'index'])->name('admin.geolocalizacion.index');
 
+// --- Canva ---
+Route::get('/admin/canva', [CanvaController::class,'vistaCanva'])->name('admin.canva.index');
 
 
 // --- Video ---
