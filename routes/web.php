@@ -72,4 +72,4 @@ Route::get('/admin/video', [VideoController::class,'index'])->name('admin.video.
 // --- web workers ---
 Route::get('/workers', function (){
     return view('workers');
-});
+})->name('admin.webworker.index');

@@ -57,6 +57,14 @@
                                 </a>
                             </li>
                         </ul>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="{{ route('admin.webworker.index') }}" target="frameprincipal" class="nav-link">
+                                    <i class="bi bi-pc mr-2"></i>
+                                    <p>Web Workers</p>
+                                </a>
+                            </li>
+                        </ul>
 
                         <ul class="nav nav-treeview">
                             <li class="nav-item">
